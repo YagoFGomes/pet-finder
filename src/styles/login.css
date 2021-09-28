@@ -8,9 +8,6 @@ html,body,header,main,footer,article,div,span,p,a,figure,img,small{
     font-family: sans-serif;
     outline: none;
 }
-:root{
-    font-family: "Roboto", sans-serif;
-}
 /*********NAVBAR*********/
 .navbar{
     width: 100%;
@@ -58,39 +55,59 @@ main .container {
     height:700px;
     flex-direction: column;
 }
-main .container p{
+main .container p{ 
     font-family: Frijole;
     font-style: normal;
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #193B75
 }
-main .container .pesquisa{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+main .container .main-logo p{
+    font-size: 3rem;
+    margin-top:-150px;
+    margin-bottom:150px;
 }
-main .container .pesquisa input{
+main .container input{
     border: none;
     background: #FFFFFF;
     border-radius: 100px;
     width: 350px;
     height:50px;
-    font-size: 2rem;
-    color:gray;
-    padding-left: 25px;
-    justify-content: center;
+    font:3rem;
 }
-main .container .pesquisa button{
-    border: none;
-    background: #fff;
+/*********FORM*********/
+
+main .container form .enviar{
+    margin-top: 50px;
+    display:flex;
+    justify-content:space-between;
+}
+main .container form .button-login{
+    border: 1px white solid;
+    background: #69BB71;
     border-radius: 100px;
-    width: 50px;
+    width: 150px;
+    height:50px;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+main .container form .button-cancel{
+    border: 1px white solid;
+    background: #E87E7E;
+    border-radius: 100px;
+    width: 150px;
     height:50px;
     cursor: pointer;
-    margin-left: 10px;
 }
-
+main .container form button a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 150px;
+    height:50px;
+}
 /*********FOOTER*********/
 footer .rodape{
     display:flex;
